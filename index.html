@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Service Directory</title>
+
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-white p-3">
+    <!-- navbar -->
+
+    <header class="max-w-7xl mx-auto flex justify-between p-3">
+      <div class="flex gap-3">
+        <img
+          class="w-9 h-9 rounded-full text-white text-sm"
+          src="./assets/logo.png"
+          alt=""
+        />
+        <div class="font-extrabold text-2xl text-[#006747]">
+          Emergency <br />
+          Service
+        </div>
+      </div>
+
+      <div class="flex gap-3 pr-3 flex-col md:flex-row">
+        <div
+          class="badge badge-ghost gap-2 text-xl rounded-2xl h-12 w-25 bg-[#41ff6b1a]"
+        >
+          <span id="heart-count" class="font-bold">0</span>
+          <img class="h-6 w-6" src="./assets/heart.png" alt="" />
+        </div>
+
+        <div class="badge gap-2 text-xl rounded-2xl h-12 w-25 bg-[#41ff6b1a]">
+          <span id="coin-count" class="font-bold">100</span>
+          <img class="h-6 w-6" src="./assets/coin.png" alt="" />
+        </div>
+
+        <div
+          class="badge badge-success gap-2 text-xl rounded-2xl h-12 w-25 bg-[#00A63E] text-white"
+        >
+          <span id="copy-count">0</span>
+          <span>Copy</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- JavaScript file -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
