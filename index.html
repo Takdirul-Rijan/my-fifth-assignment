@@ -90,7 +90,7 @@
     <!-- main section for Cards and History -->
 
     <main class="max-w-7xl mx-auto">
-      <div>
+      <div class="grid gap-6 lg:grid-cols-4 bg-[#41ff6b1a] p-5">
         <!-- card section -left -->
 
         <section class="lg:col-span-3">
@@ -110,7 +110,7 @@
                     />
                   </div>
 
-                  <button class="btn btn-ghost btn-xs">
+                  <button class="btn-heart-click btn-ghost btn-xs">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -151,7 +151,7 @@
                       alt=""
                     />
                   </div>
-                  <button class="btn btn-ghost btn-xs">
+                  <button class="btn-heart-click btn-ghost btn-xs">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -189,7 +189,7 @@
                       alt=""
                     />
                   </div>
-                  <button class="btn btn-ghost btn-xs">
+                  <button class="btn-heart-click btn-ghost btn-xs">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -228,7 +228,7 @@
                       alt=""
                     />
                   </div>
-                  <button class="btn btn-ghost btn-xs">
+                  <button class="btn-heart-click btn-ghost btn-xs">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -267,7 +267,7 @@
                       alt=""
                     />
                   </div>
-                  <button class="btn btn-ghost btn-xs">
+                  <button class="btn-heart-click btn-ghost btn-xs">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -314,7 +314,7 @@
                       alt=""
                     />
                   </div>
-                  <button class="btn btn-ghost btn-xs">
+                  <button class="btn-heart-click btn-ghost btn-xs">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -353,7 +353,7 @@
                       alt=""
                     />
                   </div>
-                  <button class="btn btn-ghost btn-xs">
+                  <button class="btn-heart-click btn-ghost btn-xs">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -388,11 +388,11 @@
                   >
                     <img
                       class="bg-[#41ff6b1a] p-2 rounded-lg"
-                      src="./assets/emergency.png"
+                      src="./assets/brac.png"
                       alt=""
                     />
                   </div>
-                  <button class="btn btn-ghost btn-xs">
+                  <button class="btn-heart-click btn-ghost btn-xs">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -427,11 +427,11 @@
                   >
                     <img
                       class="bg-[#41ff6b1a] p-2 rounded-lg"
-                      src="./assets/emergency.png"
+                      src="./assets/Bangladesh-Railway.png"
                       alt=""
                     />
                   </div>
-                  <button class="btn btn-ghost btn-xs">
+                  <button class="btn-heart-click btn-ghost btn-xs">
                     <i class="fa-regular fa-heart"></i>
                   </button>
                 </div>
@@ -457,11 +457,33 @@
             </div>
           </div>
         </section>
+
+        <!-- call history section - right -->
+
+        <aside class="lg:col-span-1">
+          <div class="card bg-white shadow-xl">
+            <div class="card-body">
+              <div class="flex items-center justify-between">
+                <h2 class="font-bold flex items-center gap-2">
+                  <i class="fa-solid fa-clock-rotate-left text-gray-500"></i>
+                  Call History
+                </h2>
+                <button
+                  id="clear-history"
+                  class="btn btn-ghost btn-sm text-white bg-green-600 rounded-xl"
+                >
+                  Clear
+                </button>
+              </div>
+
+              <ul id="history-list" class="mt-4 space-y-3"></ul>
+            </div>
+          </div>
+        </aside>
       </div>
     </main>
 
     <!-- JavaScript file -->
-
     <script src="./script.js"></script>
   </body>
 </html>
